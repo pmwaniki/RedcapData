@@ -12,6 +12,7 @@ License: GPL >= 2
 LazyData: true
 Imports:
     data.table,
+    doFuture,
     RCurl,
     stringr,
     methods,
