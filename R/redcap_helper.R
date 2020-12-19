@@ -154,7 +154,7 @@ get_chunked_redcap_data = function(api,
       })
       
     }else{
-      time=system.time(data_list = lapply(ids_list, function(ids) {
+      time=system.time(data_list <- lapply(ids_list, function(ids) {
         ds_chunk = get_redcap_data(
           api = api, token = token, local = local, fields = fields, forms = forms, ids_to_pull = ids, verifySSL = verifySSL
         )
